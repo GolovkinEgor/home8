@@ -1,0 +1,6 @@
+sudo apt install lxc 
+sudo lxc-create -t download -n egor -- -d kali -r current -a amd64  
+sudo lxc-create -t download -n egor1 -- -d kali -r current -a amd64  
+sudo lxc-start egor
+sudo lxc-start egor1
+sudo lxc-ls -f  
